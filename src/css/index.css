@@ -30,9 +30,7 @@ body {
 body {
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
-  /* background-color: hsl(0, 0%, 8%);
-   font-family: "Inter", sans-serif;
-   color: hsl(0, 0%, 100%); */
+  background-color: hsl(224.52 100% 93.92%);
 }
 
 /*

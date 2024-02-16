@@ -13,17 +13,19 @@ function Card() {
         <h1 className="card__title">Order Summary</h1>
 
         <p className="card__order-description">
-          ou can now listen to millions of songs, audiobooks, and podcasts on
+          You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
 
         <div className="flex-group">
-          <img src={musicIcon} alt="mucis note icon" />
-          <div className="card__plan-details">
-            <p>Annual Plan</p>
-            <span>$59.99/year</span>
+          <div className="card__plan">
+            <img src={musicIcon} alt="music note icon" />
+            <div>
+              <p className="card__plan-details">Annual Plan</p>
+              <p className="card__plan-price">$59.99/year</p>
+            </div>
           </div>
-          <span>Change</span>
+          <span className="card__plan-change">Change</span>
         </div>
 
         <button className="card__button">Proceed to Payment</button>
