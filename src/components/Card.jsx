@@ -4,8 +4,8 @@ import musicIcon from "../assets/images/icon-music.svg";
 
 function Card() {
   return (
-    <article className="card">
-      <picture className="card__image" role="image">
+    <article className="card" role="region" aria-label="Order Summary">
+      <picture className="card__image">
         <img src={illustration} alt="illustration of a girl enjoying music" />
       </picture>
 
