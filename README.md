@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
-- Live Site URL: [Github Pages]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/order-summary-component-using-reactjs-c7yWlubJ3X)
+- Live Site URL: [Github Pages](https://pravinkori.github.io/fem-order-summary-component/)
 
 ## My process
 
