@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import "../css/App.css";
 import illustration from "../assets/images/illustration-hero.svg";
 import musicIcon from "../assets/images/icon-music.svg";
 
-function Card() {
+function Card(props) {
   return (
     <article className="card" role="region" aria-label="Order Summary">
       <picture className="card__image">
@@ -12,17 +13,14 @@ function Card() {
       <div className="card__content">
         <h1 className="card__title">Order Summary</h1>
 
-        <p className="card__order-description">
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </p>
+        <p className="card__order-description">{props.orderDescription}</p>
 
         <div className="flex-group">
           <div className="card__plan">
             <img src={musicIcon} alt="music note icon" />
             <div>
-              <p className="card__plan-details">Annual Plan</p>
-              <p className="card__plan-price">$59.99/year</p>
+              <p className="card__plan-details">{props.planType}</p>
+              <p className="card__plan-price">${props.planPrice}/year</p>
             </div>
           </div>
           <span className="card__plan-change">Change</span>
