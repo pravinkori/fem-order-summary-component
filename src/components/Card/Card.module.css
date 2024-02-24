@@ -1,0 +1,98 @@
+/* card style */
+.card {
+  --cotent-padding: 2rem;
+  --cotent-spacing: 1rem;
+
+  font-family: var(--ff-base);
+  font-weight: var(--fw-medium);
+  background-color: var(--clr-neutral-white);
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 375px;
+}
+
+.card__content {
+  display: grid;
+  gap: var(--cotent-spacing);
+  padding: var(--cotent-padding);
+}
+
+.card__title {
+  text-align: center;
+  color: var(--clr-neutral-dark-blue);
+  font-weight: var(--fw-extra-bold);
+}
+
+.card__order-description {
+  text-align: center;
+  color: var(--clr-neutral-desat-blue);
+}
+
+.flex-group {
+  display: flex;
+  padding: 1.25rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--clr-neutral-pale-blue);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__plan {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__plan-details {
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-dark-blue);
+}
+
+.card__plan-price {
+  color: var(--clr-neutral-desat-blue);
+}
+
+.card__plan-change {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-bright-blue);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.5s ease;
+}
+
+.card__plan-change:hover {
+  color: var(--clr-neutral-blue);
+}
+
+.card__button {
+  font-weight: var(--fw-extra-bold);
+  font-size: var(--fs-400);
+  background-color: var(--clr-primary-bright-blue);
+  color: var(--clr-neutral-white);
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 0px 20px 20px 2px var(--clr-primary-pale-blue);
+  transition: background-color 0.5s ease;
+}
+
+.card__button:hover {
+  background-color: var(--clr-neutral-blue);
+}
+
+.card__cancel-button {
+  border: none;
+  border: none;
+  cursor: pointer;
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-neutral-desat-blue);
+  background-color: transparent;
+  transition: color 0.5s ease;
+}
+
+.card__cancel-button:hover {
+  color: var(--clr-neutral-dark-blue);
+}
